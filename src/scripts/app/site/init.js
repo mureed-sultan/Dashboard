@@ -2,10 +2,11 @@ import {addPage, addPaths} from 'setjs/kernel/page-manager.js';
 
 import './api.js';
 import './template-functions.js';
-import home from './pages/home.js';
+// import home from './pages/home.js';
+import admin from './pages/admin.js';
 
 export default function() {
-  addPage('', home);
+  addPage('', admin);
   addPaths('site', [
     'guide',
     'docs',

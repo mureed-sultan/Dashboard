@@ -1,0 +1,76 @@
+.dashboard-header {
+  h3 {
+    @apply text-xl font-light py-5;
+  }
+  .dashboard-banner {
+    background-color: #e7ebfd;
+    @apply pl-5 flex flex-col h-40 justify-center;
+
+    h3 {
+      @apply text-2xl font-bold p-0;
+    }
+    p {
+      @apply text-lg underline text-gray-700;
+    }
+  }
+  .dashboard-banner-item {
+    @apply flex bg-white pt-10 pb-10 justify-center;
+    .banner-item {
+      width: 22vw;
+      @apply mx-4 p-3;
+      H5 {
+        @apply text-lg font-semibold;
+      }
+      p {
+        @apply text-sm font-medium mb-2;
+      }
+      a {
+        @apply text-blue-600;
+      }
+    }
+  }
+  .dashboard-widget {
+    @apply grid grid-cols-2 gap-4;
+    .widget-left {
+      .health {
+        @apply bg-white;
+        border: 1px solid gray;
+        h6 {
+          border-bottom: 1px solid gray;
+          @apply px-3 pt-1;
+        }
+        div {
+          @apply flex items-center h-24;
+          p {
+            margin: 0px;
+            @apply px-3 pt-1 text-xs;
+          }
+        }
+      }
+      /* background-color: aqua; */
+    }
+    .widget-right {
+      /* background-color: green; */
+      .quick-draft {
+        h6 {
+          border-bottom: 1px solid gray;
+          @apply px-3 py-1;
+
+        }
+        @apply flex flex-col bg-white;
+        border: 1px solid gray;
+        input,
+        textarea {
+          border: 1px solid gray;
+          @apply mx-3 my-1;
+        }
+        label {
+          @apply px-3 py-1;
+        }
+        button {
+          @apply w-32 h-8 text-sm rounded-md bg-blue-500 text-white;
+        }
+      }
+    }
+  }
+}
