@@ -19,7 +19,7 @@
       width: 22vw;
       @apply mx-4 p-3;
       H5 {
-        @apply text-lg font-semibold;
+        @apply text-base pb-3 font-semibold;
       }
       p {
         @apply text-sm font-medium mb-2;
@@ -47,6 +47,25 @@
           }
         }
       }
+      .at-glance {
+        @apply bg-white mt-5;
+        border: 1px solid gray;
+        h6 {
+          @apply text-base px-5;
+          border-bottom: 1px solid gray;
+        }
+        div {
+          p {
+            @apply m-0 px-5 text-blue-500 pb-1;
+          }
+          p:nth-child(3) {
+            @apply pb-4;
+          }
+        }
+        p {
+          @apply text-black px-5 text-sm;
+        }
+      }
       /* background-color: aqua; */
     }
     .widget-right {
@@ -55,7 +74,6 @@
         h6 {
           border-bottom: 1px solid gray;
           @apply px-3 py-1;
-
         }
         @apply flex flex-col bg-white;
         border: 1px solid gray;
@@ -68,7 +86,7 @@
           @apply px-3 py-1;
         }
         button {
-          @apply w-32 h-8 text-sm rounded-md bg-blue-500 text-white;
+          @apply w-32 h-8 text-sm rounded-md bg-blue-500 text-white ml-3 mt-5;
         }
       }
     }

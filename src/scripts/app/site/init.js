@@ -8,7 +8,7 @@ import admin from './pages/admin.js';
 export default function() {
   addPage('', admin);
   addPaths('site', [
-    'guide',
+    'admin/update',
     'docs',
     'docs/getting-started',
     'docs/templates',

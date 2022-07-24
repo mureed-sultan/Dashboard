@@ -1,0 +1,29 @@
+#update{
+
+    .update-header{
+        /* background-color: rebeccapurple; */
+        @apply mb-16;
+        h4{
+            @apply text-xl font-medium text-black pb-3;
+        }
+        p{
+            @apply text-sm text-gray-800;
+        }
+    } 
+    .update-version{
+        /* background-color: rebeccapurple; */
+        @apply mb-16;
+        h5{
+            @apply text-base text-black;
+        }
+        p{
+            @apply text-xs text-gray-800 m-0;
+        }
+        p:nth-child(2){
+            @apply pb-6;
+        }
+        a{
+            @apply text-blue-500 underline text-xs; 
+        }
+    }
+}
