@@ -15,8 +15,8 @@
           - HEAD
           AllowedHeaders:
           - '*'
-          ExposedHeaders:
-          - 'XMLHttpRequest'
+          # ExposedHeaders:
+          # - 'XMLHttpRequest'
           AllowedOrigins:
           - !Join ['', ['https://', !Ref domain]]
           - !If

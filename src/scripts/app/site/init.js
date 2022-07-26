@@ -7,14 +7,8 @@ import admin from './pages/admin.js';
 
 export default function() {
   addPage('', admin);
-  addPaths('site', [
+  addPaths('site',[
     'admin/update',
-    'docs',
-    'docs/getting-started',
-    'docs/templates',
-    'docs/pages',
-    'docs/architecture',
-    'docs/samples',
-    'docs/questions'
-  ]);
+    'admin/post',
+  ])
 }

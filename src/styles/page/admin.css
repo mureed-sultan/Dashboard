@@ -1,8 +1,13 @@
 .dashboard-header {
-  h3 {
+  h2 {
     @apply text-xl font-light py-5;
+    transform: translate(0px, -100px);
+    animation: menu-scroll 1000ms 2s linear forwards;
   }
+
   .dashboard-banner {
+    transform: translate(120vw, 0px);
+    animation: menu-scroll 1000ms 3s linear forwards;
     background-color: #e7ebfd;
     @apply pl-5 flex flex-col h-40 justify-center;
 
@@ -14,6 +19,8 @@
     }
   }
   .dashboard-banner-item {
+    transform: translate(120vw, 0px);
+    animation: menu-scroll 1000ms 4s linear forwards;
     @apply flex bg-white pt-10 pb-10 justify-center;
     .banner-item {
       width: 22vw;
@@ -30,7 +37,9 @@
     }
   }
   .dashboard-widget {
-    @apply grid grid-cols-2 gap-4;
+    transform: translate(120vw, 0px);
+    animation: menu-scroll 1000ms 5s linear forwards;
+    @apply grid grid-cols-2 gap-4 mt-5;
     .widget-left {
       .health {
         @apply bg-white;

@@ -1,0 +1,67 @@
+#post {
+  .post-header {
+    transform: rotateY(90deg);
+    animation: rotate-menu 1s 2s forwards;    
+    @apply flex gap-3 mt-8;
+    /* transform: skewY(20deg); */
+    h4 {
+      @apply text-lg font-medium text-gray-700;
+    }
+    button {
+      border: 1px solid;
+      @apply border-blue-500 px-2 py-0 rounded-none text-blue-500;
+    }
+  }
+  .post-link {
+    transform: rotateY(90deg);
+    animation: rotate-menu 1s 3s forwards;   
+    @apply mt-5 flex;
+    a {
+      @apply text-blue-600 pr-3;
+    }
+    a:nth-child(2) {
+      @apply ml-2;
+    }
+  }
+  .post-form {
+    transform: rotateY(90deg);
+    animation: rotate-menu 1s 4s forwards;   
+    table {
+      @apply w-full;
+      tr {
+        border: 1px solid #c3c4c7;
+        @apply text-blue-600 text-left align-middle h-8;
+      }
+      th {
+        @apply bg-white font-normal text-sm;
+      }
+      tr:nth-child(2) {
+        @apply h-20 pt-1 align-top;
+      }
+      tr:nth-child(2):hover {
+        @apply h-20 pt-1 align-top;
+      }
+      td {
+        @apply text-blue-600;
+      }
+    }
+  }
+  .post-table-btn {
+    @apply flex gap-3 mt-5;
+    select {
+      @apply h-8;
+      border: 1px solid #c3c4c7;
+    }
+    button {
+      border: 1px solid;
+      @apply border-blue-500 px-2 py-0 rounded-none text-blue-500;
+    }
+  }
+}
+
+@keyframes rotate-menu {
+    0%{ }
+    100%{
+        transform: rotateY(0deg);
+    }
+}

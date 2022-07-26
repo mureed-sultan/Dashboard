@@ -3,6 +3,7 @@ client: stateempire
 project: set
 version: 0.0.1
 email: help@stateempire.com
+api_url: https://localhost:5000
 local:
   environment: local
   domain: localhost

@@ -1,8 +1,10 @@
 #update{
 
     .update-header{
+        transform: scale(0);
+        animation: zoom-out 1s 2s forwards;
         /* background-color: rebeccapurple; */
-        @apply mb-16;
+        @apply mb-16 mt-10;
         h4{
             @apply text-xl font-medium text-black pb-3;
         }
@@ -11,6 +13,8 @@
         }
     } 
     .update-version{
+        transform: scale(0);
+        animation: zoom-out 1s 3s forwards;
         /* background-color: rebeccapurple; */
         @apply mb-16;
         h5{
@@ -25,5 +29,11 @@
         a{
             @apply text-blue-500 underline text-xs; 
         }
+    }
+}
+@keyframes zoom-out {
+    0%{}
+    100%{
+        transform: scale(1);
     }
 }

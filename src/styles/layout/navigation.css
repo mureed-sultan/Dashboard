@@ -1,21 +1,33 @@
-nav{
+nav {
   @apply col-span-3 bg-gray-800;
+  transform: translate(-300px, 0px);
   width: 100%;
-  height: 100vh;
-  ul{
+  height: 100%;
+  animation: menu-scroll 2000ms linear forwards;
+  ul {
     @apply py-2;
-    li{
+    li {
       @apply py-1;
-      a{
+      a {
         @apply text-white cursor-pointer relative pl-3;
       }
-      a:hover::before{
+      a:hover::before {
         content: "";
         @apply absolute bg-blue-500 w-1 h-full left-0;
       }
-      a:hover{
+      a:hover {
         @apply text-blue-500;
       }
     }
   }
+}
+@keyframes menu-scroll {
+  0% {
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.active {
+  background-color: red;
 }
