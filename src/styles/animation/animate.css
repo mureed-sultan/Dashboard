@@ -42,3 +42,11 @@
     background-position: -100% 0%;
   }
 }
+@keyframes move {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-20vh);
+  }
+}

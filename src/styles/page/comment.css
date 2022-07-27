@@ -46,7 +46,7 @@
           content: "50%";
           position: absolute;
           top: -20px;
-          right:-12px;
+          right: -12px;
           font-size: 12px;
         }
 
@@ -58,7 +58,7 @@
           content: "10%";
           position: absolute;
           top: -20px;
-          right:-12px;
+          right: -12px;
           font-size: 12px;
         }
         .third-bar {
@@ -69,7 +69,7 @@
           content: "90%";
           position: absolute;
           top: -20px;
-          right:-12px;
+          right: -12px;
           font-size: 12px;
         }
         .loading-value {
@@ -78,56 +78,84 @@
       }
     }
   }
-  .comment-menu{
-    .clock-design{
-        @apply bg-blue-500;
-          .clock {
-            @apply flex relative overflow-hidden;
-            height: 20vh;
-            font-size: 5vh;
-            font-family: sans-serif;
-            line-height: 20.4vh;
-          }
-          
-          .clock::before, .clock::after {
-            content: '';
-            width: 30rem;
-            height: 3vh;
-            position: absolute;
-            z-index: 2;
-          }
-          
-          .clock::after {
-            bottom: 0;
+  .comment-menu {
+    @apply grid grid-cols-3 gap-3 mt-3 h-56;
+    .clock-design {
+      position: relative;
+      @apply bg-blue-500 h-24;
+      .clock {
+        @apply flex relative overflow-hidden w-full;
+        height: 10vh;
+        font-size: 5vh;
+        font-family: sans-serif;
+      }
 
-          }
-          
-          .clock > div {
-            display: flex;
-          }
-          
-          .tick {
-            line-height: 17vh;
-          }
-          
-          .tick-hidden {
-            opacity: 0;
-          }
-          
-          .move {
-            animation: move linear 1s infinite;
-          }
-          
-          @keyframes move {
-            from {
-              transform: translateY(0vh);
-            }
-            to {
-              transform: translateY(-20vh);
-            }
-          }
-          
-          
+      .clock > div {
+        display: flex;
+        align-items: baseline;
+      }
+
+      .tick-hidden {
+        opacity: 0;
+      }
+
+      .move {
+        animation: move linear 1s infinite;
+      }
+    }
+    .clock-design::after {
+      width: 100px;
+      height: 100px;
+      content: " ";
+      position: absolute;
+      background-color: red;
+      border-radius: 50%;
+      left: 50%;
+      border: 10px solid white;
+      transform: translate(-50%, 0%);
+      background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/557/491/small/round-clock-cartoon-object-vector.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .menu-block {
+      /* background-color: aqua; */
+      @apply grid grid-cols-2 gap-3;
+      .menu-item {
+        @apply flex flex-col justify-center items-center;
+        img {
+          max-width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: white;
+          border: 5px solid white;
+        }
+        h6 {
+          @apply text-sm text-white font-light;
+        }
+        p {
+          @apply text-base text-white font-light;
+        }
+      }
+    }
+    .user-detail {
+      @apply relative;
+      .user-bgimage {
+        max-height: 50px;
+        img {
+          height: 100px;
+        }
+      }
+      .user-img {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        img {
+          width: 100px;
+        }
+        p{@apply m-0;}
+      }
     }
   }
 }
