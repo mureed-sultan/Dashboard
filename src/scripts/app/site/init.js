@@ -4,11 +4,15 @@ import './api.js';
 import './template-functions.js';
 // import home from './pages/home.js';
 import admin from './pages/admin.js';
+import media from './pages/media.js';
 
 export default function() {
   addPage('', admin);
-  addPaths('site',[
-    'admin/update',
-    'admin/post',
-  ])
+  addPage('media', media);
+  addPaths('site/admin',[
+    'update',
+    'post',
+    'pages',
+    'comment',
+  ]);
 }

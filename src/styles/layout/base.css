@@ -11,21 +11,23 @@
   --grey-dark: #848587;
 
   --link-color: #0000ff;
-  --highlight: #EC1E65;
+  --highlight: #ec1e65;
   --success: #54dd57;
-  --error: #EC1E65;
+  --error: #ec1e65;
 
   --width-max: 1280px;
   --height-navigation: 120px;
   --height-input: 72px;
 
-  --font-body: 'neue-haas-grotesk-display';
-  --font-heading: 'neue-haas-grotesk-display';
-  --font-mono: 'Menlo', 'Courier New', monospace;
+  --font-body: "neue-haas-grotesk-display";
+  --font-heading: "neue-haas-grotesk-display";
+  --font-mono: "Menlo", "Courier New", monospace;
 
   --shadow-light: 0 1px 4px 0 rgba(#000, 0.033), 0 5px 10px 0 rgba(#000, 0.044);
-  --shadow-heavy: 0 50px 100px rgba(#000, 0.1), 0 15px 35px rgba(#000, 0.15), 0 5px 15px rgba(#000, 0.1);
-  --shadow-button: 0 4px 10px 8px rgba(#0000ff, 0.088), 0 3px 6px 0 rgba(#0000ff, 0.11);
+  --shadow-heavy: 0 50px 100px rgba(#000, 0.1), 0 15px 35px rgba(#000, 0.15),
+    0 5px 15px rgba(#000, 0.1);
+  --shadow-button: 0 4px 10px 8px rgba(#0000ff, 0.088),
+    0 3px 6px 0 rgba(#0000ff, 0.11);
   --index: 1002;
 
   --modal: rgba(#fff, 0);
@@ -51,15 +53,14 @@ body {
   @apply grid grid-cols-24;
 
   color: var(--text);
-  background-color:#F0F0F1;
+  background-color: #f0f0f1;
 
   transition: background-color 0.33s ease-in-out;
 
   nav,
   main,
   footer {
-    transition: opacity 0.33s ease-in-out,
-                background-color 0.33s ease-in-out;
+    transition: opacity 0.33s ease-in-out, background-color 0.33s ease-in-out;
   }
 
   nav,
@@ -68,9 +69,8 @@ body {
   }
 
   nav {
-    transition: opacity 0.33s ease-in-out,
-                background-color 0.33s ease-in-out,
-                transform 0.88s ease;
+    transition: opacity 0.33s ease-in-out, background-color 0.33s ease-in-out,
+      transform 0.88s ease;
     will-change: opacity, background-color, transform;
   }
 
@@ -82,7 +82,7 @@ body {
   }
 
   #main-content {
-    @apply col-span-19 col-start-5; 
+    @apply col-span-19 col-start-5;
     @apply relative;
     @apply min-h-screen;
     @apply w-full max-w-full;
@@ -126,7 +126,6 @@ body {
 
   ol,
   ul {
-
   }
 
   a {
@@ -144,31 +143,12 @@ body {
 
   button,
   .button {
-    @apply relative;
-    @apply inline-flex;
-    @apply items-center;
-    @apply justify-center;
-    @apply border border-solid;
-    @apply rounded-full;
-    @apply font-normal;
-    @apply whitespace-no-wrap;
-    @apply py-3 px-8;
-    @apply text-center;
-    @apply outline-none !important;
-    @apply bg-transparent;
-    @apply cursor-pointer;
-    @apply no-underline;
-
-    color: var(--link-color);
-    border-color: var(--link-color);
-
-    font-family: var(--font-mono);
-    font-size: 16px;
+    border: 1px solid;
+    @apply border-blue-500 px-2 py-0 rounded-none text-blue-500;
 
     box-shadow: none;
-    transition: color 0.33s ease-in-out,
-                background-color 0.33s ease-in-out,
-                box-shadow 0.33s ease-in-out;
+    transition: color 0.33s ease-in-out, background-color 0.33s ease-in-out,
+      box-shadow 0.33s ease-in-out;
 
     @screen xm {
       @apply block;
@@ -188,7 +168,7 @@ body {
       &:after {
         @apply ml-3;
 
-        content: '\2192';
+        content: "\2192";
         font-family: var(--font-body);
       }
     }
@@ -203,5 +183,8 @@ body {
       }
     }
   }
+}
+img{
+  @apply w-full h-full;
 }
 /* purgecss end ignore */

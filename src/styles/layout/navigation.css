@@ -21,13 +21,3 @@ nav {
     }
   }
 }
-@keyframes menu-scroll {
-  0% {
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
-}
-.active {
-  background-color: red;
-}

@@ -1,0 +1,28 @@
+#media {
+  .media-header {
+    @apply flex gap-5 mt-5;
+    h4 {
+      @apply text-lg font-medium;
+    }
+  }
+  .media-banner {
+    @apply bg-white px-3 py-1 mb-6 flex gap-2 items-center;
+    border: 1px solid #8c8f94;
+    select {
+      border: 1px solid #8c8f94;
+      @apply h-6;
+    }
+    button {
+      @apply text-sm;
+    }
+  }
+  .media-galary {
+    @apply flex flex-wrap;
+    div {
+      max-width: 150px;
+      width: 100%;
+      height:150px;
+      @apply p-2;
+    }
+  }
+}

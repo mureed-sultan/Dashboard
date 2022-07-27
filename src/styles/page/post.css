@@ -59,9 +59,3 @@
   }
 }
 
-@keyframes rotate-menu {
-    0%{ }
-    100%{
-        transform: rotateY(0deg);
-    }
-}

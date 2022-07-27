@@ -28,6 +28,10 @@
 @import 'utilities/common';
 @import 'utilities/animation';
 
+@import 'animation/animate';
 @import 'page/admin';
 @import 'page/update';
 @import 'page/post';
+@import 'page/media';
+@import 'page/pages';
+@import 'page/comment';

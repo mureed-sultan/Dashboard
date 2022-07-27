@@ -1,0 +1,28 @@
+<div id="media" data-template="site/admin/media">
+    <div class="media-header">
+        <h4>Media Library</h4>
+        <button>Add new</button>
+    </div>
+    <div class="media-banner">
+        <select >
+            <option>All media items</option>
+            <option>Images</option>
+            <option>Videos</option>
+            <option>Documents</option>
+            <option>Spreed Sheet</option>
+            <option>Archive</option>
+        </select>
+        <select>
+            <option>All Date</option>
+            <option>last week</option>
+            <option>last Month</option>
+            <option>last year</option>
+        </select>
+        <button>Bulk Select</button>
+    </div>
+    <div class="media-galary" data-list='{"prop": "imgArr"}'>
+        <div>
+            <img src={val} alt="">
+        </div>
+    </div>
+</div>

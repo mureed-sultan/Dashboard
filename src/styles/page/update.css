@@ -31,9 +31,3 @@
         }
     }
 }
-@keyframes zoom-out {
-    0%{}
-    100%{
-        transform: scale(1);
-    }
-}
